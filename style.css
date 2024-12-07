@@ -1,5 +1,5 @@
 body {
-    background-color: #181A1B;
+    background-color: #000;
 }
 
 .loading {
@@ -27,7 +27,6 @@ body {
 .atom:nth-child(1) {
     top: 0;
     left: calc(50% - 15px);
-    background: radial-gradient(#fff, rgb(58, 58, 166));
     background: radial-gradient(rgba(255, 255, 255, 0.599), rgba(0, 0, 255, 0.795));
     transform-origin: 0% 100%;
     box-shadow: 5px 5px 20px rgba(58, 58, 166, 0.7);
@@ -36,9 +35,7 @@ body {
 .atom:nth-child(2) {
     top: calc(100% - 30px);
     left: calc(50% - 15px);
-    background: radial-gradient(#fff, rgb(187, 81, 81));
     background: radial-gradient(rgba(255, 255, 255, 0.678), rgba(255, 0, 0, 0.797));
-    
     transform-origin: 50% 0;
     box-shadow: 5px 5px 20px rgba(187, 81, 81, 0.7);
 }
@@ -46,7 +43,6 @@ body {
 .atom:nth-child(3) {
     top: calc(50% - 15px);
     left: calc(0%);
-    background: radial-gradient(#fff, rgb(86, 181, 86));
     background: radial-gradient(rgba(255, 255, 255, 0.639), rgba(0, 255, 0, 0.788));
     transform-origin: 100% 100%;
     box-shadow: 5px 5px 20px rgba(86, 181, 86, 0.7);
@@ -55,12 +51,10 @@ body {
 .atom:nth-child(4) {
     top: calc(50% - 40px);
     left: calc(0%);
-    background: radial-gradient(#fff, rgb(81, 148, 187));
     background: radial-gradient(rgba(255, 255, 255, 0.659), rgba(0, 162, 255, 0.778));
     transform-origin: 50% 100%;
     box-shadow: 5px 5px 20px rgba(81, 148, 187, 0.7);
 }
-
 
 @keyframes spin-zoom {
     0% {
@@ -83,12 +77,14 @@ body {
     height: 100%;
     border-radius: 50%;
     animation: flicker 1s infinite alternate;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 @keyframes flicker {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
